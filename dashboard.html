@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/blue_elephant.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>Dumbo</h1>
+                    <h2>Remember like an Elephant</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <!--<a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>-->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dumboNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="=collapse navbar-collapse" id="dumboNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class=" text-primary">Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">Team</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">Features</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">Contact</span></a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <div class="btn-group btn-group-toggle">
+                        <label class="btn btn-light">
+                            <input type="radio" name="loginOrRegister" id="register" autocomplete="off"> Register
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="loginOrRegister" id="login" autocomplete="off"> Login
+                        </label>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!--[ Recent Users ] start-->
+    <div class="col-xl-8 col-md-6">
+        <div class="card Recent-Users">
+            <div class="card-header">
+                <h3>Decks</h3>
+            </div>
+            <div class="card-block px-0 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Deck</th>
+                                <th>Due</th>
+                                <th>New</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="unread align-items-center">
+                                <td class="col  col-sm-6">
+                                    <a href="#">
+                                        <h6>JavaScript</h6>
+                                    </a>
+                                </td>
+                                <td class="col col-sm-2 text-success">
+                                    <h6>11</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <h6>2</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light"><span class="fa fa-cogs"></span></button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Rename</a>
+                                            <a class="dropdown-item" href="#">Options</a>
+                                            <a class="dropdown-item" href="#">Export</a>
+                                            <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="unread align-items-center">
+                                <td class="col  col-sm-6">
+                                    <a href="#">
+                                        <h6>HTML</h6>
+                                    </a>
+                                </td>
+                                <td class="col col-sm-2 text-success">
+                                    <h6>20</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <h6>5</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light"><span class="fa fa-cogs"></span></button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Rename</a>
+                                            <a class="dropdown-item" href="#">Options</a>
+                                            <a class="dropdown-item" href="#">Export</a>
+                                            <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="unread align-items-center">
+                                <td class="col  col-sm-6">
+                                    <a href="#">
+                                        <h6>CSS</h6>
+                                    </a>
+                                </td>
+                                <td class="col col-sm-2 text-success">
+                                    <h6>15</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <h6>1</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light"><span class="fa fa-cogs"></span></button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Rename</a>
+                                            <a class="dropdown-item" href="#">Options</a>
+                                            <a class="dropdown-item" href="#">Export</a>
+                                            <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="unread align-items-center">
+                                <td class="col  col-sm-6">
+                                    <a href="#">
+                                        <h6>React</h6>
+                                    </a>
+                                </td>
+                                <td class="col col-sm-2 text-success">
+                                    <h6>32</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <h6>7</h6>
+                                </td>
+                                <td class="col col-sm-2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light"><span class="fa fa-cogs"></span></button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Rename</a>
+                                            <a class="dropdown-item" href="#">Options</a>
+                                            <a class="dropdown-item" href="#">Export</a>
+                                            <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[ Recent Users ] end-->
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
