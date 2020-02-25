@@ -8,33 +8,51 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="CSS/teamstyle.css"> 
+    <link rel="stylesheet" href="teamCSS/teamstyle.css"> 
     
     <title>Meet The Team</title>
 </head>
 <body>
-  <!-- Navbar aria are accesibility controls https://getbootstrap.com/docs/4.0/components/dropdowns/#accessibility  -->
-  <nav class="navbar navbar-expand-lg fixed-top ">  
-    <a class="navbar-brand " href="#" >  <i class="fa fa-home fa-lg pr-1 " aria-hidden="true"></i> Home</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-    <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse " id="navbarSupportedContent">     
-      <ul class="navbar-nav mr-4">
-    <li class="nav-item">
-        <a class="nav-link " data-value="about" href="#"><i class="fa fa-info fa-lg pr-1" aria-hidden="true"></i> About</a>        </li>  
-   <li class="nav-item">
-       <a class="nav-link " data-value="price"href="#"><i class="fa fa-money fa-lg pr-1 " aria-hidden="true"></i> Price</a>
-    </li>
-    <li class="nav-item"> 
-       <a class="nav-link " data-value="features" href="#"><i class="fa fa-list-alt fa-lg pr-1" aria-hidden="true"></i> Features</a>
-    </li>
-   <li class="nav-item">  
-      <a class="nav-link " data-value="team" href="#"><i class="fa fa-user-circle-o fa-lg pr-1" aria-hidden="true"></i> Team</a></li>
-   <li class="nav-item"> 
-    <a class="nav-link " data-value="contact" href="#"><i class="fa fa-comment-o fa-lg pr-1" aria-hidden="true"></i> Contact</a></li> 
-   </ul> 
-   </div></nav>
+   <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                  <img src="img/blue_elephant.png" class="img-fluid" />
+              </div>
+              <div class="col">
+                  <h1>Dumbo</h1>
+                  <h2>Remember like an Elephant</h2>
+              </div>
+          </div>
+      </div>
+  </header>
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+          <!--<a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>-->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dumboNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="=collapse navbar-collapse" id="dumboNavbar">
+              <ul class="navbar-nav">
+                  <li class="nav-item active"><a class="nav-link" href="index.html"><span class=" text-primary">Home</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">About</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">Team</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="/features.html"><span class=" text-primary">Features</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary">Contact</span></a></li>
+              </ul>
+              <span class="navbar-text ml-auto">
+                  <div class="btn-group btn-group-toggle">
+                      <label class="btn btn-light">
+                          <input type="radio" name="loginOrRegister" id="register" autocomplete="off"> Register
+                      </label>
+                      <label class="btn btn-primary active">
+                          <input type="radio" name="loginOrRegister" id="login" autocomplete="off"> Login
+                      </label>
+                  </div>
+              </span>
+          </div>
+      </div>
+  </nav>
 <!--Navbar end-->
 
 
@@ -42,10 +60,10 @@
    <!-- Team section -->
 <div class="team">
     <div class="container">
-       <h1 class="text-center">Our Team</h1>
+       <h1 class="text-center"> Our Team </i>  </h1>
      <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-12 item">
-       <img src="CSS/emmanuelre.jpg" class="rounded-circle img-fluid" alt="team">
+       <img src="img/emmanuelre.jpg" class="rounded-circle img-fluid" alt="team">
        <div class="des">
          Emmanuel
         </div>
@@ -54,21 +72,21 @@
        <span class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 item">
-       <img src="CSS/luisre.jpg" class="rounded-circle img-fluid" alt="team">
+       <img src="img/luisre.jpg" class="rounded-circle img-fluid" alt="team">
        <div class="des">
          Luis
         </div>
        <span class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 item" >
-       <img src="CSS/Yurinare.jpg" class=" rounded-circle img-fluid" alt="team">
+       <img src="img/Yurinare.jpg" class=" rounded-circle img-fluid" alt="team">
        <div class="des">
          Yurina
         </div>
        <span class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 item">
-       <img src="CSS/seanre.jpg" class="rounded-circle img-fluid" alt="team">
+       <img src="img/seanre.jpg" class="rounded-circle img-fluid" alt="team">
         <div class="des">
         Sean
         </div>
