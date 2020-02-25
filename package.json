@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/alexsimonson/feb2020bootstrap#readme",
     "devDependencies": {
-        "lite-server": "^2.5.4"
+        "lite-server": "^2.3.0"
     },
     "dependencies": {
         "bootstrap": "^4.0.0",
