@@ -41,3 +41,6 @@ header h2 {
     /*background: #901CAD;*/
     background: white;
 }
+.text-wrap  {
+  width: 6rem;
+}
