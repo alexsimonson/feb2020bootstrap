@@ -28,6 +28,7 @@ header h2 {
     padding: 30px;
     /*background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
     color: white;*/
+  
 }
 
 .row-content {
@@ -39,4 +40,7 @@ header h2 {
 .navbar {
     /*background: #901CAD;*/
     background: white;
+}
+.text-wrap  {
+  width: 6rem;
 }

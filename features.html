@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <title>Dumbo - Memory like an Elephant</title>
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Features</title>
 </head>
-
 <body>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -40,19 +35,19 @@
             </button>
             <div class="=collapse navbar-collapse" id="dumboNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class=" text-primary"><i class="fa fa-home" aria-hidden="true"></i> Home</span></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span class=" text-primary"><i class="fa fa-home" aria-hidden="true"></i> Home</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary"><i class="fa fa-info" aria-hidden="true"></i> About</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html"><span class=" text-primary "><i class="fa fa-users" aria-hidden="true"></i> Team</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html"><span class=" text-primary"><i class="fa fa-bars" aria-hidden="true"></i> Features</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class=" text-primary"><i class="fa fa-bars" aria-hidden="true"></i> Features</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class=" text-primary"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</span></a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <div class="btn-group btn-group-toggle">
-                        <label class="btn btn-light">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-light"  data-toggle="modal" data-target="#registerModal">
                             <input type="radio" name="loginOrRegister" id="register" autocomplete="off"> Register
                         </label>
-                        <label class="btn btn-primary active">
-                            <input type="radio" name="loginOrRegister" id="login" autocomplete="off"> Login
+                        <label class="btn btn-primary active" data-toggle="modal" data-target="#loginModal">
+                            <input type="radio" name="loginOrRegister" id="login" autocomplete="off" checked> Login
                         </label>
                     </div>
                 </span>
@@ -72,27 +67,18 @@
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="loginUsername">Username</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-user"></span></span>
-                                        </div>
-                                        <input type="email" class="form-control form-control-sm" id="loginUsername" placeholder="Enter username/email">
-                                    </div>
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                                 </div>
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="loginPassword">Password</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-key"></span></span>
-                                        </div>
-                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                    </div>
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me </label>
+                                        <label class="form-check-label"> Remember me
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +97,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Ready to sign up? </h3>
+                    <h3 class="modal-title">Register </h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -119,40 +105,20 @@
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="registerFullName">Full Name</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-user"></span></span>
-                                        </div>
-                                        <input type="text" class="form-control form-control-sm" id="registerFullName" placeholder="Full Name">
-                                    </div>
+                                    <label class="sr-only" for="firstName">First Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="firstName" placeholder="First Name">
                                 </div>
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="loginUsername">Email</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-envelope"></span></span>
-                                        </div>
-                                        <input type="email" class="form-control form-control-sm" id="registerUsername" placeholder="Enter email">
-                                    </div>
+                                    <label class="sr-only" for="lastName">Last Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Last Name">
                                 </div>
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="registerPassword">Password</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-key"></span></span>
-                                        </div>
-                                        <input type="password" class="form-control form-control-sm" id="registerPassword" placeholder="Enter Password">
-                                    </div>
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                                 </div>
                                 <div class="form-group col-12">
-                                    <div class="input-group">
-                                        <label class="sr-only" for="registerPassword2">Password</label>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" style="width: 40px;"><span class="fa fa-key"></span></span>
-                                        </div>
-                                        <input type="password" class="form-control form-control-sm" id="registerPassword2" placeholder="Confirm Password">
-                                    </div>
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
                                 </div>
                             </div>
                             <div class="form-row">
@@ -165,14 +131,38 @@
             </div>
         </div>
     </div>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-8"><h1>Your knowledge - managed</h1>
+            <p>Log the information you want to remember in a simple-to-use, versatile card format. We’ll show your cards at the best possible time to optimize long-term memorization, and give you relevant stats so you can get even more efficient.</p>
+        </div>
+          <div class="col-4"><img src="img/1.jpg" class="img-fluid" alt="Responsive image"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"><img src="img/2.jpg" class="img-fluid" alt="Responsive image"></div>
+            <div class="col-8"><h1>Learn anywhere.</h1>
+                <p>Your phone, your tablet, your watch: your cards will always be close to you synced between your devices. So you can learn on-the-go and get closer to your goals at home, in the bus or on the train.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8"><h1>Easy imports, unlimited storage.</h1>
+                <p>Import your cards from the tools you use everyday: Excel, Anki or Airtable. Manage your decks easily in our app with unlimited storage for your text-based cards (free), and media-based cards (with Dumbo premium).</p>
+            </div>
+            <div class="col-4"><img src="img/3.jpg" class="img-fluid" alt="Responsive image"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"><img src="img/4.jpg" class="img-fluid" alt="Responsive image"></div>
+            <div class="col-8"><h1>Share your knowledge and be rewarded.</h1>
+                <p>Our card store gives you the power to easily monetize your efforts by selling your decks to our community members.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <script src="js/scripts.js"></script>
-
 </body>
-
 </html>
